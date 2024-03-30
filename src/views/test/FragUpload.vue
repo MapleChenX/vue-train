@@ -39,6 +39,7 @@ const upload = async () => {
         console.log(typeof md5);
     });
 
+    // 分片从0开始
     for (let i = 0; i < totalChunks; i++) {
         const start = i * chunkSize; // 分片的起始位置
         const end = Math.min(file.value.size, start + chunkSize); // 分片的结束位置
