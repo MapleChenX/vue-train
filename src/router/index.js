@@ -48,6 +48,16 @@ const routes = [
         path: '/fragUpload',
         name: 'fragUpload',
         component: () => import('@/views/test/FragUpload.vue')
+    },
+    {
+        path: '/video',
+        name: 'video',
+        component: () => import('@/views/test/Video.vue')
+    },
+    {
+        path: '/u',
+        name: 'u',
+        component: () => import('@/views/test/VideoUpload.vue')
     }
 ]
 
